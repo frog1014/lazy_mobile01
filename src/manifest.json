@@ -6,7 +6,6 @@
   "description": "__MSG_appDesc__",
   "permissions": [
     "tabs",
-    "activeTab",
     "declarativeContent",
     "https://www.mobile01.com/"
   ],
