@@ -1,0 +1,158 @@
+{
+  "appName": {
+    "message": "Lazy Mobile01",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "讓您自定鍵盤快速鍵切換上下頁、第一頁或最後一頁",
+    "description": ""
+  },
+  "nextPage": {
+    "message": "下一頁",
+    "description": ""
+  },
+  "lastPage": {
+    "message": "最後一頁",
+    "description": ""
+  },
+  "previousPage": {
+    "message": "上一頁",
+    "description": ""
+  },
+  "listPage": {
+    "message": "回列表頁",
+    "description": ""
+  },
+  "firstPage": {
+    "message": "第一頁",
+    "description": ""
+  },
+  "copyFailed": {
+    "message": "網址複製失敗",
+    "description": ""
+  },
+  "newTabWithUrl": {
+    "message": "開啟複製的網址至新分頁",
+    "description": ""
+  },
+  "copyUrl": {
+    "message": "複製此分頁的網址",
+    "description": ""
+  },
+  "openNotepad": {
+    "message": "開啟記事本",
+    "description": ""
+  },
+  "newQueryWithSelected": {
+    "message": "搜尋選取的文字(網址)於新分頁",
+    "description": ""
+  },
+  "independent": {
+    "message": "將分頁獨立於新視窗",
+    "description": ""
+  },
+  "toggleMute": {
+    "message": "分頁靜音",
+    "description": ""
+  },
+  "toShutUp": {
+    "message": "其他分頁靜音",
+    "description": ""
+  },
+  "newQueryWithPasted": {
+    "message": "搜尋複製的文字於新分頁",
+    "description": ""
+  },
+  "prevent_clost_tab_splash": {
+    "message": "防關閉分頁<br/>已啟用",
+    "description": ""
+  },
+  "keepSameDomain": {
+    "message": "只保留相同網域的分頁",
+    "description": ""
+  },
+  "killSameDomain": {
+    "message": "關閉相同網域的分頁",
+    "description": ""
+  },
+  "killOtherSameDomain": {
+    "message": "關閉其他相同網域的分頁",
+    "description": ""
+  },
+  "prevent_clost_tab_splash_inactive": {
+    "message": "防關閉分頁<br/>未啟用",
+    "description": ""
+  },
+  "prevent_clost_tab_splash1": {
+    "message": "只要保留此分頁，您的瀏覽器就會在關閉前提醒您",
+    "description": ""
+  },
+  "prevent_clost_tab_splash2": {
+    "message": "注意: 由於Google API的限制，您必須先在此網頁任意處點擊或按下鍵盤任意字母以啟用防關閉功能",
+    "description": ""
+  },
+  "prevent_clost_tab_splash3": {
+    "message": "按下任意字母或點擊任意處<br/>回到上一個分頁或開啟新分頁",
+    "description": ""
+  },
+  "prevent_clost_tab_splash4": {
+    "message": "如何關閉/啟用此功能: 您可藉由點擊此應用程式的圖示找到設定的選項",
+    "description": ""
+  },
+  "go_shortcut_setting": {
+    "message": "前往設定快速鍵<br/>(請捲動至$name$區塊)",
+    "description": "",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": ""
+      }
+    }
+  },
+  "bookmarkRename": {
+    "message": "書籤名稱已簡化",
+    "description": ""
+},
+  "popup_splash_prevent_close_tab": {
+    "message": "啟用防關閉視窗 (說明)",
+    "description": ""
+  },
+  "bookmark_title_simplifier": {
+    "message": "啟用簡化書籤標題 (說明)",
+    "description": ""
+  },
+  "bookmark_title_simplifier_tooltip": {
+    "message": "在拖曳並加入書籤後，會自動將標題內的最後一個符號'-'後的部分移除",
+    "description": ""
+  },
+  "popup_splash_prevent_close_tab_tooltip": {
+    "message": "在關閉瀏覽器視窗時，您將可以再次確認是否關閉。在每次開啟新視窗時將自動開啟防關閉分頁",
+    "description": ""
+  },
+  "feature_head": {
+    "message": "支援動作(目前設定)",
+    "description": ""
+  },
+  "features": {
+    "message": "釘選分頁: Alt + 1, 複製分頁: Alt + 3, 開啟複製的網址至新分頁: Ctrl + Shift + V, 開啟記事本, 搜尋複製的文字於新分頁: Ctrl + Shift + Q, 搜尋選取文字(網址)於新分頁, 將分頁獨立至新視窗, 分頁靜音, 將其他分頁靜音, 只保留相同網域的分頁",
+    "description": ""
+  },
+  "features2": {
+    "message": "更多支援的動作請前往鍵盤快速鍵設定頁面$br$",
+    "description": "",
+    "placeholders": {
+      "br": {
+        "content": "$1",
+        "example": "<br/>"
+      }
+    }
+  },
+  "previousTabInSameWindow": {
+    "message": "回到最近使用的分頁(MRU)",
+    "description": ""
+  },
+  "previousTabLastWindow": {
+    "message": "回到先前使用的分頁(跨視窗)",
+    "description": ""
+  }
+}

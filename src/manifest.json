@@ -1,0 +1,73 @@
+{
+  "name": "Lazy Mobile01",
+  "short_name": "Mouse Terminator for Mobile01",
+  "version": "0.0.1",
+  "default_locale": "zh_TW",
+  "description": "__MSG_appDesc__",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "declarativeContent",
+    "https://www.mobile01.com/"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.mobile01.com/*"
+      ],
+      "js": ["contentScripts.js"],
+      "css": []
+    }
+  ],
+  "commands": {
+    "nextPage": {
+      "suggested_key": {
+        "default": "Ctrl+Right"
+      },
+      "description": "__MSG_nextPage__"
+    },
+    "lastPage": {
+      "suggested_key": {
+        "default": "Ctrl+Left"
+      },
+      "description": "__MSG_lastPage__"
+    },
+    "previousPage": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X"
+      },
+      "description": "__MSG_previousPage__"
+    },
+    "listPage": {
+      "description": "__MSG_listPage__"
+    },
+    "firstPage": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Z"
+      },
+      "description": "__MSG_firstPage__"
+    }
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/launcher16.png",
+      "32": "images/launcher32.png",
+      "48": "images/launcher48.png",
+      "128": "images/launcher128.png"
+    }
+  },
+  "icons": {
+    "16": "images/launcher16.png",
+    "32": "images/launcher32.png",
+    "48": "images/launcher48.png",
+    "128": "images/launcher128.png"
+  },
+  "manifest_version": 2
+}
