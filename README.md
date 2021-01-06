@@ -3,8 +3,12 @@
 Lazy Mobile01 is a mouse terminator
 A keyboard shortcuts customization tool of supported features
 
-Super optimize your user experience with your custom shortcut keys on Mobile01.
+Super optimize your user experience on Mobile01 with your custom shortcut keys.
 Whether you're into any pages that with pagination, there is a fluent surffing for you.
+
+Lazy Mobile01 - Chrome 線上應用程式商店 
+https://chrome.google.com/webstore/detail/lazy-mobile01/gnjdpklplhckdjfochdjgapcojnaenlb 
+
 *********
 ## Features
 click the app icon to config your shortcuts

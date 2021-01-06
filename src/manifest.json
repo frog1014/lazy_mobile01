@@ -1,7 +1,7 @@
 {
   "name": "Lazy Mobile01",
   "short_name": "Mouse Terminator for Mobile01",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "default_locale": "zh_TW",
   "description": "__MSG_appDesc__",
   "permissions": [
@@ -15,15 +15,13 @@
     ],
     "persistent": false
   },
-  "content_scripts": [
-    {
-      "matches": [
-        "https://www.mobile01.com/*"
-      ],
-      "js": ["contentScripts.js"],
-      "css": []
-    }
-  ],
+  "content_scripts": [{
+    "matches": [
+      "https://www.mobile01.com/*"
+    ],
+    "js": ["contentScripts.js"],
+    "css": []
+  }],
   "commands": {
     "nextPage": {
       "suggested_key": {
@@ -32,24 +30,21 @@
       "description": "__MSG_nextPage__"
     },
     "lastPage": {
-      "suggested_key": {
-        "default": "Ctrl+Left"
-      },
       "description": "__MSG_lastPage__"
     },
     "previousPage": {
       "suggested_key": {
-        "default": "Ctrl+Shift+X"
+        "default": "Ctrl+Left"
       },
       "description": "__MSG_previousPage__"
     },
     "listPage": {
+      "suggested_key": {
+        "default": "Ctrl+Up"
+      },
       "description": "__MSG_listPage__"
     },
     "firstPage": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+Z"
-      },
       "description": "__MSG_firstPage__"
     }
   },
