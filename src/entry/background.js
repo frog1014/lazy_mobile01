@@ -57,6 +57,10 @@ chrome.commands.onCommand.addListener(command => {
       Commands.previousPage()
       break
     }
+    case "closeLeftAd": {
+      Commands.closeLeftAd()
+      break
+    }
     case "firstPage": {
       Commands.firstPage()
       break
