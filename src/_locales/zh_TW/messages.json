@@ -23,6 +23,10 @@
     "message": "回列表頁",
     "description": ""
   },
+  "closeLeftAd": {
+    "message": "關閉正在左側或右側跳出來的廣告",
+    "description": ""
+  },
   "firstPage": {
     "message": "第一頁",
     "description": ""

@@ -18,6 +18,9 @@ import Api from "../assets/js/api"
                 case "firstPage":
                     firstPage()
                     break;
+                case "closeLeftAd":
+                    closeLeftAd()
+                    break;
                 case "lastPage":
                     lastPage()
                     break;
@@ -93,6 +96,16 @@ import Api from "../assets/js/api"
             console.log('querySelector', it)
             if (it) {
                 it[it.length - 1].click()
+            }
+        })
+    }
+
+    function closeLeftAd() {
+        console.log('closeLeftAd');
+        (document.querySelector('.close-btn') || false).let(it => {
+            console.log('querySelector', it)
+            if (it) {
+                it.click()
             }
         })
     }

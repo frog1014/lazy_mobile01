@@ -46,6 +46,9 @@
     },
     "firstPage": {
       "description": "__MSG_firstPage__"
+    },
+    "closeLeftAd": {
+      "description": "__MSG_closeLeftAd__"
     }
   },
   "page_action": {

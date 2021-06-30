@@ -120,6 +120,10 @@ export default class Commands {
         sendPageCommand('listPage')
     }
 
+    static closeLeftAd() {
+        sendPageCommand('closeLeftAd')
+    }
+
     static independent() {
         Api.getCurrentTab(tabs => {
             var current = tabs[0]
