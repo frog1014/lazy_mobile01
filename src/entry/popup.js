@@ -21,9 +21,9 @@ import Api from "../assets/js/api"
 
     chrome.commands.getAll(function (res) {
         console.log('getAll', res)
-        res && res.length > 0 && res.let(it => {
+        res && res.length > 0 && res.filter(e => e.name != '_execute_action').let(it => {
             ('<ul>' + it.map(element => '<li>' + element.description + ': ' + element.shortcut + '</li>').join('') + '</ul>')
-            .let(it => Api.getI18nMsg("feature_head") + it
+                .let(it => Api.getI18nMsg("feature_head") + it
                     //  + Api.getI18nMsg("features2", ['<br/>'])
                 )
                 .let(it => {

@@ -9,16 +9,18 @@ import Commands from "../assets/js/commands.js"
 
 'use strict';
 
-chrome.pageAction.onClicked.addListener(tab => {
-  console.log('pageAction', tab)
-  // chrome.tabs.create({
-  //   url: "chrome://extensions/shortcuts"
-  // })
-});
+// chrome.pageAction.onClicked.addListener(tab => {
+//   console.log('pageAction', tab)
+//   // chrome.tabs.create({
+//   //   url: "chrome://extensions/shortcuts"
+//   // })
+// });
 
 
 chrome.runtime.onInstalled.addListener(function () {
   console.log('onInstalled')
+  chrome.action.disable();
+
   // chrome.storage.sync.set({
   //   color: '#3aa757'
   // }, function () {
@@ -29,7 +31,7 @@ chrome.runtime.onInstalled.addListener(function () {
     chrome.declarativeContent.onPageChanged.addRules([{
       conditions: [new chrome.declarativeContent.PageStateMatcher({
         pageUrl: {
-          hostEquals: 'www.mobile01.com'
+          hostSuffix: 'mobile01.com'
         },
       })],
       actions: [new chrome.declarativeContent.ShowPageAction()]
@@ -63,79 +65,6 @@ chrome.commands.onCommand.addListener(command => {
     }
     case "lastPage": {
       Commands.lastPage()
-      break
-    }
-    case "toggle-pin": {
-      Commands.togglePin()
-      break
-    }
-
-    case "toggle-mute": {
-      Commands.toggleMute()
-      break
-    }
-
-    case "previousTabInSameWindow": {
-      Commands.previousTabInSameWindow(windowsHistory)
-      break
-    }
-
-    case "previousTabLastWindow": {
-      Commands.previousTabLastWindow(windowsHistory)
-      break
-    }
-
-    case "toShutUp": {
-      Commands.toShutUp()
-      break
-    }
-
-    case "duplicate": {
-      Commands.duplicate()
-      break
-    }
-
-    case "independent": {
-      Commands.independent()
-      break
-    }
-
-    case "newTabWithUrl": {
-      Commands.newTabWithUrl()
-      break
-    }
-
-    case "newQueryWithPasted": {
-      Commands.newQueryWithPasted()
-      break
-    }
-
-    case "newQueryWithSelected": {
-      Commands.newQueryWithSelected()
-      break
-    }
-
-    case "openNotepad": {
-      Commands.openNotepad()
-      break
-    }
-
-    case "copyUrl": {
-      Commands.copyUrl()
-      break
-    }
-
-    case "killSameDomain": {
-      Commands.killSameDomain()
-      break
-    }
-
-    case "killOtherSameDomain": {
-      Commands.killOtherSameDomain()
-      break
-    }
-    case "keepSameDomain": {
-      Commands.keepSameDomain()
       break
     }
   }

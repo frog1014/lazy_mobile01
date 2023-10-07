@@ -1,27 +1,31 @@
 {
   "name": "Lazy Mobile01",
   "short_name": "Mouse Terminator for Mobile01",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "default_locale": "zh_TW",
   "description": "__MSG_appDesc__",
   "permissions": [
-    "tabs",
-    "declarativeContent",
-    "https://www.mobile01.com/"
+    "activeTab",
+    "declarativeContent"
   ],
   "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": false
+    "service_worker": "background.js",
+    "type": "module"
   },
-  "content_scripts": [{
-    "matches": [
-      "https://www.mobile01.com/*"
-    ],
-    "js": ["contentScripts.js"],
-    "css": []
-  }],
+  "host_permissions": [
+    "https://www.mobile01.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.mobile01.com/*"
+      ],
+      "js": [
+        "contentScripts.js"
+      ],
+      "css": []
+    }
+  ],
   "commands": {
     "nextPage": {
       "suggested_key": {
@@ -48,7 +52,7 @@
       "description": "__MSG_firstPage__"
     }
   },
-  "page_action": {
+  "action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "images/launcher16.png",
@@ -63,5 +67,5 @@
     "48": "images/launcher48.png",
     "128": "images/launcher128.png"
   },
-  "manifest_version": 2
+  "manifest_version": 3
 }
